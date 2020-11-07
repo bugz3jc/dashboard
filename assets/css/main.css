@@ -1,0 +1,112 @@
+.layout{
+    display: flex;
+    flex-direction:column;
+   
+}
+.navbar-light .navbar-toggler{
+    border:0;
+    font-size: 1.75rem;
+}
+
+.navbar-nav .nav-link{
+    text-align: center;
+}
+.sidebar{
+    min-width: 240px;
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    min-height: 100%;
+    transition-duration: .2s;
+    transform: translateX(-250px);
+    will-change: transform;
+    transition-property:transform,-webkit-transform;
+    z-index:1000;
+}
+
+.sidebar.is-visible{
+    
+    transform: translateX(0);
+}
+
+.sidebar .sidebar-header{
+    padding: .5rem 1rem;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.sidebar .sidebar-header .brand-icon{
+    margin-right: 1rem;
+}
+.sidebar .sidebar-header .brand-icon .material-icons {
+    font-size: 2.25rem;
+}
+.sidebar .sidebar-header .brand-name{
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+.sidebar .sidebar-section{
+    padding: 16px;
+}
+.layout-static{
+    display:none;
+}
+.layout-static.is-visible{
+    position:absolute;
+    display: block;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.5);
+}
+.header{
+    width:100%;
+    transition-duration: .2s;
+}
+
+.page-content{
+    position:relative;
+    display: inline-block;
+    max-height: calc(100vh - 58px)!important;
+    overflow-y:auto;
+
+}
+
+
+.sidebar .nav .nav-item .nav-link{
+    color: rgba(255,255,255,0.8);
+    padding: .75rem;
+    border-radius: .25rem;
+    display: flex;
+}
+.sidebar .nav .nav-item .nav-link:hover{
+    color: rgba(255,255,255,1);
+}
+.sidebar .nav .nav-item .nav-link.active{
+    background-color: rgba(0,0,0,0.1);
+    color:#fff;
+}
+
+
+@media (min-width: 992px) { 
+
+    .sidebar{
+        transform: translateX(0);
+        min-width: 240px;
+    }
+    .drawer-toggler{
+        display:none;
+    }
+    .header{
+        margin-left:240px;
+        width: calc(100% - 240px);
+    }
+    .page-content{
+        margin-left:240px;
+    }
+    
+ }

@@ -1,0 +1,18 @@
+
+#product_list{
+    width: 100%!important;
+}
+.product-images{
+    width: 150px;
+    min-height: 150px;
+    margin-left: 1rem;
+}
+
+.add-product-images{
+    width: 150px;
+    min-height: 150px;
+    margin-left: 1rem;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,57 @@
+.card .action-btn{
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+label.btn.active::before{
+    content: "✓";
+}
+
+label.btn:hover{
+    color:initial;
+    background-color: initial;
+}
+
+.modal#sectionsModal .modal-content{
+    
+    
+    min-height: 720px;
+    max-height: 720px;
+}
+
+#sectionSelectionTable tbody{
+    display: block;
+    overflow:auto;
+    height: 412px;
+    width: 100%;
+}
+#sectionSelectionTable thead tr,
+#sectionSelectionTable tbody tr,
+#sectionSelectionTable tbody td{
+    display: block;
+}
+
+
+#sectionSelectionTable td{
+    padding: .1rem 0;
+
+}
+#sectionSelectionTable label{
+    padding: .5rem;
+    width: 100%;
+    transition-duration: .1s;
+    margin:0;
+}
+#sectionSelectionTable label:hover{
+    background-color: rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+#sectionSelectionTable input[type=radio].sectionRadio:checked + label,
+#sectionSelectionTable input[type=radio].sectionRadio:checked + label:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+
+
+

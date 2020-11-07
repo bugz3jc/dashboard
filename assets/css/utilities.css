@@ -1,0 +1,9 @@
+.thumbnail-circle{
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+}
+
+.bg-gray-dark{
+    background-color: rgba(0,0,0,0.1);
+}
